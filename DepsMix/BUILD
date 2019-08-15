@@ -7,6 +7,13 @@ swift_library(
     srcs = glob([
         "*.swift",
     ]),
+    copts = [
+        "-Xcc",
+        "-DDEBUG=1",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/ba-00004195"
+    ],
     visibility = ["//visibility:public"],
 )
 

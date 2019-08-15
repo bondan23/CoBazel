@@ -1,11 +1,7 @@
 load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
-# load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_file")
 
-# git_repository(
-#     name = "com_google_protobuf",
-#     remote = "https://github.com/protocolbuffers/protobuf.git",
-#     tag = "v3.9.0",
-# )
 
 git_repository(
     name = "build_bazel_rules_apple",
@@ -40,3 +36,14 @@ load(
 )
 
 protobuf_deps()
+
+http_file(
+    name = "xctestrunner",
+    executable = 1,
+    urls = ["https://github.com/google/xctestrunner/releases/download/0.2.2/ios_test_runner.par"],
+)
+
+http_archive(
+    name = "rules_pods",
+    urls = ["https://github.com/pinterest/PodToBUILD/releases/download/0.25.2-fc71a0b/PodToBUILD.zip"],
+)

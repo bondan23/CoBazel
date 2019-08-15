@@ -1,0 +1,16 @@
+digraph mygraph {
+  node [shape=box];
+"//DepsMix:DepsMix"
+"//DepsMix:DepsMix" -> "//DepsMix:DepsMix_ObjC"
+"//DepsMix:DepsMix" -> "//DepsMix:Person.swift\n//DepsMix:Weapon.swift"
+"//DepsMix:DepsMix" -> "//DepsMix:DepsMix.h"
+"//DepsMix:DepsMix_ObjC"
+"//DepsMix:DepsMix_ObjC" -> "//DepsMix:TestMix"
+"//DepsMix:DepsMix_ObjC" -> "//DepsMix:Bomb.m\n//DepsMix:Bomb.h"
+"//DepsMix:DepsMix_ObjC" -> "//DepsMix:DepsMix.h"
+"//DepsMix:DepsMix.h"
+"//DepsMix:TestMix"
+"//DepsMix:TestMix" -> "//DepsMix:Person.swift\n//DepsMix:Weapon.swift"
+"//DepsMix:Person.swift\n//DepsMix:Weapon.swift"
+"//DepsMix:Bomb.m\n//DepsMix:Bomb.h"
+}

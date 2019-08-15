@@ -1,0 +1,795 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02E32DF68AB8C1FEF306F76927D6BD0E /* _FBTweakDictionaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A851DCD01705A31DC08FEAFEF8925A5 /* _FBTweakDictionaryViewController.m */; };
+		057EA918C6CA6ECA3B715F1EFF092F5B /* Pods-CoBazel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7940EBD9180B4A329B2ACA437AD8EE1 /* Pods-CoBazel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19D136CA9CF0F6C31CEBF79241C6EE85 /* _FBTweakColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A012383DB410A0AB9D6EB21D8D07AA52 /* _FBTweakColorViewController.m */; };
+		1BE4104599342281C1D0F1E12B91ADD0 /* _FBTweakBindObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FE20170FB037A9507A37D5AAFDD21D6 /* _FBTweakBindObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D43631D203999434CA8804C1702DB51 /* _FBTweakColorViewControllerHexDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2C031CBEB9697F92A65C44914FA741 /* _FBTweakColorViewControllerHexDataSource.m */; };
+		226CD7DE24BE8E94FB6E45C2D35FBE6B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9561C0BCFD0AC2B8AB34C268C71EA063 /* MessageUI.framework */; };
+		2C25BAB603E93E96628903FC53233949 /* _FBTweakArrayViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD754CE146DA63C27071B16D1CF59F5 /* _FBTweakArrayViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D32F8FEA0DD3FFEDC57F83296738C2B /* _FBColorComponentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9367AE15E31430AFB884BAC55F0D1A0E /* _FBColorComponentCell.m */; };
+		2E0A826BDD0404C45D4DEE21559B96D9 /* _FBTweakBindObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 683AD25D7AAA6D541F07813E517511D8 /* _FBTweakBindObserver.m */; };
+		30D33E726DB32318B98197F6422EEA57 /* FBTweakCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 92B42A8FFA8AEDF0C1C3306BE3A8B856 /* FBTweakCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31E03E72E243D0509C3CEF5D20C3F5E9 /* Pods-CoBazel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A4DDD2526B5CEA374288041933CDE9 /* Pods-CoBazel-dummy.m */; };
+		3A594F8845ABECD4532E3A2BAD10DFF6 /* FBTweakStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 706B98E51F2E1DA3F69F191B2A1E4316 /* FBTweakStore.m */; };
+		3A65891F178232B0AD713469A962C6E9 /* _FBColorComponentCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A01ACEA946436512F35312834936252 /* _FBColorComponentCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E86CF5364C44B9E99DB87A4A3987085 /* _FBColorWheelCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 24065276744C2161649834B2EC7EB11F /* _FBColorWheelCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43E61ED90A6EC19796F21FBDD43938F9 /* FBTweakInline.m in Sources */ = {isa = PBXBuildFile; fileRef = 10FAC0AF349D2E48EA894E8A40E156F6 /* FBTweakInline.m */; };
+		46E600B68721631E93DB2FCB7F694F78 /* _FBTweakCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FB03B87C62343929F3D9302C57C4BC /* _FBTweakCollectionViewController.m */; };
+		47789BCBF12FB0CDB77BD1C22FDD8673 /* _FBTweakColorViewControllerHSBDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = A526386C7C7CEACB4ACA60586E8A259A /* _FBTweakColorViewControllerHSBDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DA22B7FD3B1DDAE82A28FA026C08BD5 /* _FBTweakTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 21C244FA25B83CD3784F876DF544A980 /* _FBTweakTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54A5F19013B27E639D8862C0486E0C7E /* _FBTweakDictionaryViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = FE781E64C3767367D119FB6FA994CA06 /* _FBTweakDictionaryViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D63585E5549D8F092FC260CB9D6CA41 /* _FBTweakColorViewControllerHSBDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7432CA5D8D680DCE74405DA0C78937B6 /* _FBTweakColorViewControllerHSBDataSource.m */; };
+		5E02C29E2592C10B242FF63B3AC284F4 /* FBTweakCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 01AD291856B11D6E7AA4CC675F0C2EBC /* FBTweakCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61143DA848C5583C0FB75560F7796903 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EBF0F75FFB8AE74510DAC4DA68A232 /* Foundation.framework */; };
+		67B349FB7FD8E7420CF1F343B57F5B7B /* FBTweakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 530B656B9926E5625D836AF399866CE7 /* FBTweakViewController.m */; };
+		6C1A88ABDB1ED530AE701E9E2CF42FD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EBF0F75FFB8AE74510DAC4DA68A232 /* Foundation.framework */; };
+		6D66B11B75B233270C7F239DD466210C /* FBTweakInlineInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 46343E8AC87614E50AD5ABE6A190373F /* FBTweakInlineInternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7178260AFE90831CB8EC634721ED6398 /* FBTweakStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 778D920E61C34B15B6DE0EDB00696EBB /* FBTweakStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73623C46C6E65B2B9169F5DDE1EA4DF6 /* Tweaks-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3270FE6CFDD05995D7FD04C14EE99A47 /* Tweaks-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74EB0C97AF1E60BAA31DDC5834A9A8B4 /* FBTweakShakeWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = E42A714166F587A90408A134423A0231 /* FBTweakShakeWindow.m */; };
+		75F9667FF93D231A2174F2EC7250D87B /* FBTweakEnabled.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A7AD6009DC84F7AF6B80428B0FF2DE1 /* FBTweakEnabled.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78092DD969ECE5C0EB23A9CEC30C9378 /* _FBTweakCategoryViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BC3CFE60CB3D97B069623177D2134DAD /* _FBTweakCategoryViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C2560765C967E3BAE4EB0BFF4F87DF6 /* _FBTweakArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B826E405D20642440122B84E1DC609 /* _FBTweakArrayViewController.m */; };
+		7C87C3B707A0F3FD9CE38E15E36ED872 /* Tweaks-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFBD3627885CC1641D51E572842E7E4 /* Tweaks-dummy.m */; };
+		85F5D84B1CF985CF5FD1C43122A90096 /* _FBTweakColorViewControllerDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 7373104EA46C41F77D76A2906173ADF0 /* _FBTweakColorViewControllerDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93D1B79D7756EB92F6312CF868CAF94C /* _FBColorWheelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4378600CE5144DC0BB405D8546080623 /* _FBColorWheelCell.m */; };
+		99F163EEAD058689B30DB8E202156812 /* _FBTweakTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2B13A5316C8F78458465961635B36C /* _FBTweakTableViewCell.m */; };
+		9B205D4628232EEA92ED77D71411F585 /* FBTweakViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 76AC38798929381F06977E4505E40C7D /* FBTweakViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2063E0238606D89959FFFA9E02225B4 /* _FBColorUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 70940B5E3910324DB0AF09A3171099F3 /* _FBColorUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2AD34F2F56A279EF747FD2D25FBE7FA /* FBTweakCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2089F9818AAD953B35677996C86C0852 /* FBTweakCollection.m */; };
+		A5BAB1B8345E5064E1E077A56B6CC494 /* FBTweak.m in Sources */ = {isa = PBXBuildFile; fileRef = A775190D20314383C33A4A930A23D1AE /* FBTweak.m */; };
+		AD387BE1678BB7376FE0BE1B457D81B6 /* _FBTweakCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 97FB5CF9EAFA85A7CB19478C2A8EC9A5 /* _FBTweakCollectionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C25253CAD54BF1B55BBAC80F237CF2E1 /* _FBTweakCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 211563314084C659AC3DE3AD72DDFF26 /* _FBTweakCategoryViewController.m */; };
+		C617DFD6BC60521EDF7BE20388EF84CC /* _FBKeyboardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DFA87821552F3B466AF711D0BA62A882 /* _FBKeyboardManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C948CC26E09A5F8F141A717D7C31E4B4 /* _FBTweakColorViewControllerHexDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DEAC19B6DA84601FED26A06891A586 /* _FBTweakColorViewControllerHexDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D16A0A2F316E527EB7E3D2D385EE4EE1 /* _FBSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3985EB1FAA40D921D6B8AA19C73461C0 /* _FBSliderView.m */; };
+		D31AFA8C412444E2A20C1A7E9AE880C5 /* _FBTweakColorViewControllerRGBDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D81A1BD01A31B58BB93E8B51CBDEA5 /* _FBTweakColorViewControllerRGBDataSource.m */; };
+		D500E1DD41E352FB5340C60FE08A2009 /* _FBKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FE16AC90281E9ED1DEE350694768767F /* _FBKeyboardManager.m */; };
+		DD0E4F88FD372AE0229D406D7CF2BC79 /* FBTweakCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BF3AD4C56E759D8E2F4F3BD4328652 /* FBTweakCategory.m */; };
+		DFBC9255AC71435BCCA37B5132B78B7D /* _FBSliderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A8A11213530DA5F0879376BBF4DAEB /* _FBSliderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2792F6B41B0279AAE15572D8FD69B10 /* _FBTweakColorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AF7E962303DEE78DD113DD6AC8182E /* _FBTweakColorViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E40DCFCF41AA9FA5E60456F99D83E34F /* FBTweakShakeWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 91501A74297A268EFFD48FB00A422E4C /* FBTweakShakeWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E997111BCFCFAFB0EC4DAC209EF70A9E /* FBTweakInline.h in Headers */ = {isa = PBXBuildFile; fileRef = DA377046FBF023E7369C9485A192B3C3 /* FBTweakInline.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFD326824EE8DAD0AAD5E5E99FE20EEA /* FBTweak.h in Headers */ = {isa = PBXBuildFile; fileRef = E6D71B18C306DD1BED13A82DC9581347 /* FBTweak.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0B4B8871E4EFA22B3316CAAA735CF47 /* _FBTweakColorViewControllerRGBDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = B55A3A70AA082C91D91BAD7A5C82E265 /* _FBTweakColorViewControllerRGBDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4912601F229D3181BB27978AA109230 /* _FBColorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F56698BD20126F4BFE0FAA53DAFBE72 /* _FBColorUtils.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3037BC0E50C5F9F30D37BE45785894C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBCCE854E29F9F330B76E8C2CB1C7008;
+			remoteInfo = Tweaks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01AD291856B11D6E7AA4CC675F0C2EBC /* FBTweakCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakCategory.h; path = FBTweak/FBTweakCategory.h; sourceTree = "<group>"; };
+		0C2C031CBEB9697F92A65C44914FA741 /* _FBTweakColorViewControllerHexDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBTweakColorViewControllerHexDataSource.m; path = FBTweak/_FBTweakColorViewControllerHexDataSource.m; sourceTree = "<group>"; };
+		10FAC0AF349D2E48EA894E8A40E156F6 /* FBTweakInline.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBTweakInline.m; path = FBTweak/FBTweakInline.m; sourceTree = "<group>"; };
+		2089F9818AAD953B35677996C86C0852 /* FBTweakCollection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBTweakCollection.m; path = FBTweak/FBTweakCollection.m; sourceTree = "<group>"; };
+		211563314084C659AC3DE3AD72DDFF26 /* _FBTweakCategoryViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBTweakCategoryViewController.m; path = FBTweak/_FBTweakCategoryViewController.m; sourceTree = "<group>"; };
+		21C244FA25B83CD3784F876DF544A980 /* _FBTweakTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBTweakTableViewCell.h; path = FBTweak/_FBTweakTableViewCell.h; sourceTree = "<group>"; };
+		24065276744C2161649834B2EC7EB11F /* _FBColorWheelCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBColorWheelCell.h; path = FBTweak/_FBColorWheelCell.h; sourceTree = "<group>"; };
+		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2A7AD6009DC84F7AF6B80428B0FF2DE1 /* FBTweakEnabled.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakEnabled.h; path = FBTweak/FBTweakEnabled.h; sourceTree = "<group>"; };
+		2A851DCD01705A31DC08FEAFEF8925A5 /* _FBTweakDictionaryViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBTweakDictionaryViewController.m; path = FBTweak/_FBTweakDictionaryViewController.m; sourceTree = "<group>"; };
+		3270FE6CFDD05995D7FD04C14EE99A47 /* Tweaks-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Tweaks-umbrella.h"; sourceTree = "<group>"; };
+		3985EB1FAA40D921D6B8AA19C73461C0 /* _FBSliderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBSliderView.m; path = FBTweak/_FBSliderView.m; sourceTree = "<group>"; };
+		3F56698BD20126F4BFE0FAA53DAFBE72 /* _FBColorUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBColorUtils.m; path = FBTweak/_FBColorUtils.m; sourceTree = "<group>"; };
+		3FE20170FB037A9507A37D5AAFDD21D6 /* _FBTweakBindObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBTweakBindObserver.h; path = FBTweak/_FBTweakBindObserver.h; sourceTree = "<group>"; };
+		4378600CE5144DC0BB405D8546080623 /* _FBColorWheelCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBColorWheelCell.m; path = FBTweak/_FBColorWheelCell.m; sourceTree = "<group>"; };
+		43A4DDD2526B5CEA374288041933CDE9 /* Pods-CoBazel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CoBazel-dummy.m"; sourceTree = "<group>"; };
+		46343E8AC87614E50AD5ABE6A190373F /* FBTweakInlineInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakInlineInternal.h; path = FBTweak/FBTweakInlineInternal.h; sourceTree = "<group>"; };
+		4985F6F1DE93FF533ED9F09069A299DF /* Pods-CoBazel-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CoBazel-frameworks.sh"; sourceTree = "<group>"; };
+		49970B9E2058371326BE7DF840ADC7DC /* Pods-CoBazel-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CoBazel-resources.sh"; sourceTree = "<group>"; };
+		4FD754CE146DA63C27071B16D1CF59F5 /* _FBTweakArrayViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBTweakArrayViewController.h; path = FBTweak/_FBTweakArrayViewController.h; sourceTree = "<group>"; };
+		530B656B9926E5625D836AF399866CE7 /* FBTweakViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBTweakViewController.m; path = FBTweak/FBTweakViewController.m; sourceTree = "<group>"; };
+		5314A78037D2BCB422F3C3EC68FFCDC2 /* Pods-CoBazel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoBazel.release.xcconfig"; sourceTree = "<group>"; };
+		53C80E419937303E7EA0E89BC84A05FA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54FB03B87C62343929F3D9302C57C4BC /* _FBTweakCollectionViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBTweakCollectionViewController.m; path = FBTweak/_FBTweakCollectionViewController.m; sourceTree = "<group>"; };
+		683AD25D7AAA6D541F07813E517511D8 /* _FBTweakBindObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBTweakBindObserver.m; path = FBTweak/_FBTweakBindObserver.m; sourceTree = "<group>"; };
+		6A8887C97838196B4292063FD00ABEA6 /* Pods-CoBazel-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CoBazel-acknowledgements.plist"; sourceTree = "<group>"; };
+		706B98E51F2E1DA3F69F191B2A1E4316 /* FBTweakStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBTweakStore.m; path = FBTweak/FBTweakStore.m; sourceTree = "<group>"; };
+		70940B5E3910324DB0AF09A3171099F3 /* _FBColorUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBColorUtils.h; path = FBTweak/_FBColorUtils.h; sourceTree = "<group>"; };
+		7373104EA46C41F77D76A2906173ADF0 /* _FBTweakColorViewControllerDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBTweakColorViewControllerDataSource.h; path = FBTweak/_FBTweakColorViewControllerDataSource.h; sourceTree = "<group>"; };
+		73EBF0F75FFB8AE74510DAC4DA68A232 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7432CA5D8D680DCE74405DA0C78937B6 /* _FBTweakColorViewControllerHSBDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBTweakColorViewControllerHSBDataSource.m; path = FBTweak/_FBTweakColorViewControllerHSBDataSource.m; sourceTree = "<group>"; };
+		74B826E405D20642440122B84E1DC609 /* _FBTweakArrayViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBTweakArrayViewController.m; path = FBTweak/_FBTweakArrayViewController.m; sourceTree = "<group>"; };
+		76AC38798929381F06977E4505E40C7D /* FBTweakViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakViewController.h; path = FBTweak/FBTweakViewController.h; sourceTree = "<group>"; };
+		778D920E61C34B15B6DE0EDB00696EBB /* FBTweakStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakStore.h; path = FBTweak/FBTweakStore.h; sourceTree = "<group>"; };
+		7B2F8E68934BDBB66C84DC83BAE6052E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ED10F35F14F3ECAE0009A973281F9CA /* Pods_CoBazel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CoBazel.framework; path = "Pods-CoBazel.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A01ACEA946436512F35312834936252 /* _FBColorComponentCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBColorComponentCell.h; path = FBTweak/_FBColorComponentCell.h; sourceTree = "<group>"; };
+		91501A74297A268EFFD48FB00A422E4C /* FBTweakShakeWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakShakeWindow.h; path = FBTweak/FBTweakShakeWindow.h; sourceTree = "<group>"; };
+		92B42A8FFA8AEDF0C1C3306BE3A8B856 /* FBTweakCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakCollection.h; path = FBTweak/FBTweakCollection.h; sourceTree = "<group>"; };
+		9367AE15E31430AFB884BAC55F0D1A0E /* _FBColorComponentCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBColorComponentCell.m; path = FBTweak/_FBColorComponentCell.m; sourceTree = "<group>"; };
+		94A8A11213530DA5F0879376BBF4DAEB /* _FBSliderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBSliderView.h; path = FBTweak/_FBSliderView.h; sourceTree = "<group>"; };
+		9561C0BCFD0AC2B8AB34C268C71EA063 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
+		97FB5CF9EAFA85A7CB19478C2A8EC9A5 /* _FBTweakCollectionViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBTweakCollectionViewController.h; path = FBTweak/_FBTweakCollectionViewController.h; sourceTree = "<group>"; };
+		9A2B13A5316C8F78458465961635B36C /* _FBTweakTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBTweakTableViewCell.m; path = FBTweak/_FBTweakTableViewCell.m; sourceTree = "<group>"; };
+		A012383DB410A0AB9D6EB21D8D07AA52 /* _FBTweakColorViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBTweakColorViewController.m; path = FBTweak/_FBTweakColorViewController.m; sourceTree = "<group>"; };
+		A526386C7C7CEACB4ACA60586E8A259A /* _FBTweakColorViewControllerHSBDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBTweakColorViewControllerHSBDataSource.h; path = FBTweak/_FBTweakColorViewControllerHSBDataSource.h; sourceTree = "<group>"; };
+		A775190D20314383C33A4A930A23D1AE /* FBTweak.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBTweak.m; path = FBTweak/FBTweak.m; sourceTree = "<group>"; };
+		B48FB9B9451A9511B5ADC22D6DDCFC1A /* Pods-CoBazel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoBazel.debug.xcconfig"; sourceTree = "<group>"; };
+		B531D6CA6F11E599561AE609DAAB2EBB /* Pods-CoBazel-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CoBazel-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B55A3A70AA082C91D91BAD7A5C82E265 /* _FBTweakColorViewControllerRGBDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBTweakColorViewControllerRGBDataSource.h; path = FBTweak/_FBTweakColorViewControllerRGBDataSource.h; sourceTree = "<group>"; };
+		B97EB9A398A77E71CB7E99D087A930D5 /* Tweaks-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Tweaks-prefix.pch"; sourceTree = "<group>"; };
+		BC3CFE60CB3D97B069623177D2134DAD /* _FBTweakCategoryViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBTweakCategoryViewController.h; path = FBTweak/_FBTweakCategoryViewController.h; sourceTree = "<group>"; };
+		BEFBD3627885CC1641D51E572842E7E4 /* Tweaks-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Tweaks-dummy.m"; sourceTree = "<group>"; };
+		C3AF7E962303DEE78DD113DD6AC8182E /* _FBTweakColorViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBTweakColorViewController.h; path = FBTweak/_FBTweakColorViewController.h; sourceTree = "<group>"; };
+		C5D81A1BD01A31B58BB93E8B51CBDEA5 /* _FBTweakColorViewControllerRGBDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBTweakColorViewControllerRGBDataSource.m; path = FBTweak/_FBTweakColorViewControllerRGBDataSource.m; sourceTree = "<group>"; };
+		DA377046FBF023E7369C9485A192B3C3 /* FBTweakInline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakInline.h; path = FBTweak/FBTweakInline.h; sourceTree = "<group>"; };
+		DFA87821552F3B466AF711D0BA62A882 /* _FBKeyboardManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBKeyboardManager.h; path = FBTweak/_FBKeyboardManager.h; sourceTree = "<group>"; };
+		E1BF3AD4C56E759D8E2F4F3BD4328652 /* FBTweakCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBTweakCategory.m; path = FBTweak/FBTweakCategory.m; sourceTree = "<group>"; };
+		E42A714166F587A90408A134423A0231 /* FBTweakShakeWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBTweakShakeWindow.m; path = FBTweak/FBTweakShakeWindow.m; sourceTree = "<group>"; };
+		E6D71B18C306DD1BED13A82DC9581347 /* FBTweak.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweak.h; path = FBTweak/FBTweak.h; sourceTree = "<group>"; };
+		F159A6AF03D80B88DF688CBE1C84F9BD /* Pods-CoBazel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CoBazel.modulemap"; sourceTree = "<group>"; };
+		F3F36FFE55C0BE96DAB7416615BE2DC5 /* Tweaks.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Tweaks.xcconfig; sourceTree = "<group>"; };
+		F7940EBD9180B4A329B2ACA437AD8EE1 /* Pods-CoBazel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CoBazel-umbrella.h"; sourceTree = "<group>"; };
+		F8DEAC19B6DA84601FED26A06891A586 /* _FBTweakColorViewControllerHexDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBTweakColorViewControllerHexDataSource.h; path = FBTweak/_FBTweakColorViewControllerHexDataSource.h; sourceTree = "<group>"; };
+		FAF0B4B2A00DF81E0BC938F729709117 /* Tweaks.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Tweaks.modulemap; sourceTree = "<group>"; };
+		FBB56C59FDE278BA289748272B754DA7 /* Tweaks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Tweaks.framework; path = Tweaks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE16AC90281E9ED1DEE350694768767F /* _FBKeyboardManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBKeyboardManager.m; path = FBTweak/_FBKeyboardManager.m; sourceTree = "<group>"; };
+		FE781E64C3767367D119FB6FA994CA06 /* _FBTweakDictionaryViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBTweakDictionaryViewController.h; path = FBTweak/_FBTweakDictionaryViewController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECB9C7DB10D6F1C2FF6645075DB44B44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61143DA848C5583C0FB75560F7796903 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB834A87FD28513BFEC5D060E536D866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C1A88ABDB1ED530AE701E9E2CF42FD2 /* Foundation.framework in Frameworks */,
+				226CD7DE24BE8E94FB6E45C2D35FBE6B /* MessageUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3BC4A6667B9EFE78C1A678309C65A02 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1BBB6632BDE4208E7AC96AA2E3B41EB0 /* Pods-CoBazel */ = {
+			isa = PBXGroup;
+			children = (
+				7B2F8E68934BDBB66C84DC83BAE6052E /* Info.plist */,
+				F159A6AF03D80B88DF688CBE1C84F9BD /* Pods-CoBazel.modulemap */,
+				B531D6CA6F11E599561AE609DAAB2EBB /* Pods-CoBazel-acknowledgements.markdown */,
+				6A8887C97838196B4292063FD00ABEA6 /* Pods-CoBazel-acknowledgements.plist */,
+				43A4DDD2526B5CEA374288041933CDE9 /* Pods-CoBazel-dummy.m */,
+				4985F6F1DE93FF533ED9F09069A299DF /* Pods-CoBazel-frameworks.sh */,
+				49970B9E2058371326BE7DF840ADC7DC /* Pods-CoBazel-resources.sh */,
+				F7940EBD9180B4A329B2ACA437AD8EE1 /* Pods-CoBazel-umbrella.h */,
+				B48FB9B9451A9511B5ADC22D6DDCFC1A /* Pods-CoBazel.debug.xcconfig */,
+				5314A78037D2BCB422F3C3EC68FFCDC2 /* Pods-CoBazel.release.xcconfig */,
+			);
+			name = "Pods-CoBazel";
+			path = "Target Support Files/Pods-CoBazel";
+			sourceTree = "<group>";
+		};
+		572BA275B9C5EA94E1820B449EF09E26 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BBB6632BDE4208E7AC96AA2E3B41EB0 /* Pods-CoBazel */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		64031655839DC46597306B0F8F281D61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71B0FE34B37DDB3E6DCDB8B0EBED0868 /* Tweaks */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		71B0FE34B37DDB3E6DCDB8B0EBED0868 /* Tweaks */ = {
+			isa = PBXGroup;
+			children = (
+				8A01ACEA946436512F35312834936252 /* _FBColorComponentCell.h */,
+				9367AE15E31430AFB884BAC55F0D1A0E /* _FBColorComponentCell.m */,
+				70940B5E3910324DB0AF09A3171099F3 /* _FBColorUtils.h */,
+				3F56698BD20126F4BFE0FAA53DAFBE72 /* _FBColorUtils.m */,
+				24065276744C2161649834B2EC7EB11F /* _FBColorWheelCell.h */,
+				4378600CE5144DC0BB405D8546080623 /* _FBColorWheelCell.m */,
+				DFA87821552F3B466AF711D0BA62A882 /* _FBKeyboardManager.h */,
+				FE16AC90281E9ED1DEE350694768767F /* _FBKeyboardManager.m */,
+				94A8A11213530DA5F0879376BBF4DAEB /* _FBSliderView.h */,
+				3985EB1FAA40D921D6B8AA19C73461C0 /* _FBSliderView.m */,
+				4FD754CE146DA63C27071B16D1CF59F5 /* _FBTweakArrayViewController.h */,
+				74B826E405D20642440122B84E1DC609 /* _FBTweakArrayViewController.m */,
+				3FE20170FB037A9507A37D5AAFDD21D6 /* _FBTweakBindObserver.h */,
+				683AD25D7AAA6D541F07813E517511D8 /* _FBTweakBindObserver.m */,
+				BC3CFE60CB3D97B069623177D2134DAD /* _FBTweakCategoryViewController.h */,
+				211563314084C659AC3DE3AD72DDFF26 /* _FBTweakCategoryViewController.m */,
+				97FB5CF9EAFA85A7CB19478C2A8EC9A5 /* _FBTweakCollectionViewController.h */,
+				54FB03B87C62343929F3D9302C57C4BC /* _FBTweakCollectionViewController.m */,
+				C3AF7E962303DEE78DD113DD6AC8182E /* _FBTweakColorViewController.h */,
+				A012383DB410A0AB9D6EB21D8D07AA52 /* _FBTweakColorViewController.m */,
+				7373104EA46C41F77D76A2906173ADF0 /* _FBTweakColorViewControllerDataSource.h */,
+				F8DEAC19B6DA84601FED26A06891A586 /* _FBTweakColorViewControllerHexDataSource.h */,
+				0C2C031CBEB9697F92A65C44914FA741 /* _FBTweakColorViewControllerHexDataSource.m */,
+				A526386C7C7CEACB4ACA60586E8A259A /* _FBTweakColorViewControllerHSBDataSource.h */,
+				7432CA5D8D680DCE74405DA0C78937B6 /* _FBTweakColorViewControllerHSBDataSource.m */,
+				B55A3A70AA082C91D91BAD7A5C82E265 /* _FBTweakColorViewControllerRGBDataSource.h */,
+				C5D81A1BD01A31B58BB93E8B51CBDEA5 /* _FBTweakColorViewControllerRGBDataSource.m */,
+				FE781E64C3767367D119FB6FA994CA06 /* _FBTweakDictionaryViewController.h */,
+				2A851DCD01705A31DC08FEAFEF8925A5 /* _FBTweakDictionaryViewController.m */,
+				21C244FA25B83CD3784F876DF544A980 /* _FBTweakTableViewCell.h */,
+				9A2B13A5316C8F78458465961635B36C /* _FBTweakTableViewCell.m */,
+				E6D71B18C306DD1BED13A82DC9581347 /* FBTweak.h */,
+				A775190D20314383C33A4A930A23D1AE /* FBTweak.m */,
+				01AD291856B11D6E7AA4CC675F0C2EBC /* FBTweakCategory.h */,
+				E1BF3AD4C56E759D8E2F4F3BD4328652 /* FBTweakCategory.m */,
+				92B42A8FFA8AEDF0C1C3306BE3A8B856 /* FBTweakCollection.h */,
+				2089F9818AAD953B35677996C86C0852 /* FBTweakCollection.m */,
+				2A7AD6009DC84F7AF6B80428B0FF2DE1 /* FBTweakEnabled.h */,
+				DA377046FBF023E7369C9485A192B3C3 /* FBTweakInline.h */,
+				10FAC0AF349D2E48EA894E8A40E156F6 /* FBTweakInline.m */,
+				46343E8AC87614E50AD5ABE6A190373F /* FBTweakInlineInternal.h */,
+				91501A74297A268EFFD48FB00A422E4C /* FBTweakShakeWindow.h */,
+				E42A714166F587A90408A134423A0231 /* FBTweakShakeWindow.m */,
+				778D920E61C34B15B6DE0EDB00696EBB /* FBTweakStore.h */,
+				706B98E51F2E1DA3F69F191B2A1E4316 /* FBTweakStore.m */,
+				76AC38798929381F06977E4505E40C7D /* FBTweakViewController.h */,
+				530B656B9926E5625D836AF399866CE7 /* FBTweakViewController.m */,
+				BC44D899BDCB4B854DF3947852C818B3 /* Support Files */,
+			);
+			name = Tweaks;
+			path = Tweaks;
+			sourceTree = "<group>";
+		};
+		B3BC4A6667B9EFE78C1A678309C65A02 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73EBF0F75FFB8AE74510DAC4DA68A232 /* Foundation.framework */,
+				9561C0BCFD0AC2B8AB34C268C71EA063 /* MessageUI.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		BC44D899BDCB4B854DF3947852C818B3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				53C80E419937303E7EA0E89BC84A05FA /* Info.plist */,
+				FAF0B4B2A00DF81E0BC938F729709117 /* Tweaks.modulemap */,
+				F3F36FFE55C0BE96DAB7416615BE2DC5 /* Tweaks.xcconfig */,
+				BEFBD3627885CC1641D51E572842E7E4 /* Tweaks-dummy.m */,
+				B97EB9A398A77E71CB7E99D087A930D5 /* Tweaks-prefix.pch */,
+				3270FE6CFDD05995D7FD04C14EE99A47 /* Tweaks-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Tweaks";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				24390EFD555DD124430DFF9724065945 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				64031655839DC46597306B0F8F281D61 /* Pods */,
+				ECB8F1A8506225CF84C79BA451A501ED /* Products */,
+				572BA275B9C5EA94E1820B449EF09E26 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		ECB8F1A8506225CF84C79BA451A501ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7ED10F35F14F3ECAE0009A973281F9CA /* Pods_CoBazel.framework */,
+				FBB56C59FDE278BA289748272B754DA7 /* Tweaks.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0FE1C8DC94F91FEDD2EAF09BA3D04F65 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				057EA918C6CA6ECA3B715F1EFF092F5B /* Pods-CoBazel-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8349CDE2E7DCAA395A29EDB0353330F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A65891F178232B0AD713469A962C6E9 /* _FBColorComponentCell.h in Headers */,
+				A2063E0238606D89959FFFA9E02225B4 /* _FBColorUtils.h in Headers */,
+				3E86CF5364C44B9E99DB87A4A3987085 /* _FBColorWheelCell.h in Headers */,
+				C617DFD6BC60521EDF7BE20388EF84CC /* _FBKeyboardManager.h in Headers */,
+				DFBC9255AC71435BCCA37B5132B78B7D /* _FBSliderView.h in Headers */,
+				2C25BAB603E93E96628903FC53233949 /* _FBTweakArrayViewController.h in Headers */,
+				1BE4104599342281C1D0F1E12B91ADD0 /* _FBTweakBindObserver.h in Headers */,
+				78092DD969ECE5C0EB23A9CEC30C9378 /* _FBTweakCategoryViewController.h in Headers */,
+				AD387BE1678BB7376FE0BE1B457D81B6 /* _FBTweakCollectionViewController.h in Headers */,
+				E2792F6B41B0279AAE15572D8FD69B10 /* _FBTweakColorViewController.h in Headers */,
+				85F5D84B1CF985CF5FD1C43122A90096 /* _FBTweakColorViewControllerDataSource.h in Headers */,
+				C948CC26E09A5F8F141A717D7C31E4B4 /* _FBTweakColorViewControllerHexDataSource.h in Headers */,
+				47789BCBF12FB0CDB77BD1C22FDD8673 /* _FBTweakColorViewControllerHSBDataSource.h in Headers */,
+				F0B4B8871E4EFA22B3316CAAA735CF47 /* _FBTweakColorViewControllerRGBDataSource.h in Headers */,
+				54A5F19013B27E639D8862C0486E0C7E /* _FBTweakDictionaryViewController.h in Headers */,
+				4DA22B7FD3B1DDAE82A28FA026C08BD5 /* _FBTweakTableViewCell.h in Headers */,
+				EFD326824EE8DAD0AAD5E5E99FE20EEA /* FBTweak.h in Headers */,
+				5E02C29E2592C10B242FF63B3AC284F4 /* FBTweakCategory.h in Headers */,
+				30D33E726DB32318B98197F6422EEA57 /* FBTweakCollection.h in Headers */,
+				75F9667FF93D231A2174F2EC7250D87B /* FBTweakEnabled.h in Headers */,
+				E997111BCFCFAFB0EC4DAC209EF70A9E /* FBTweakInline.h in Headers */,
+				6D66B11B75B233270C7F239DD466210C /* FBTweakInlineInternal.h in Headers */,
+				E40DCFCF41AA9FA5E60456F99D83E34F /* FBTweakShakeWindow.h in Headers */,
+				7178260AFE90831CB8EC634721ED6398 /* FBTweakStore.h in Headers */,
+				9B205D4628232EEA92ED77D71411F585 /* FBTweakViewController.h in Headers */,
+				73623C46C6E65B2B9169F5DDE1EA4DF6 /* Tweaks-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D1F391BFDAA7DC9970283DA03D0A13CB /* Pods-CoBazel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3825475EE50352EB7E2DBF8D3CD9820 /* Build configuration list for PBXNativeTarget "Pods-CoBazel" */;
+			buildPhases = (
+				0FE1C8DC94F91FEDD2EAF09BA3D04F65 /* Headers */,
+				27E4952629333069B7ABB81AC7B331F5 /* Sources */,
+				ECB9C7DB10D6F1C2FF6645075DB44B44 /* Frameworks */,
+				984B22A86394F1B70BAD84A04017C998 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAAD55F0FBD9C9716DDDB1F9363CEC08 /* PBXTargetDependency */,
+			);
+			name = "Pods-CoBazel";
+			productName = "Pods-CoBazel";
+			productReference = 7ED10F35F14F3ECAE0009A973281F9CA /* Pods_CoBazel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FBCCE854E29F9F330B76E8C2CB1C7008 /* Tweaks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AC4DBB27014805658352AF2DEDC948F /* Build configuration list for PBXNativeTarget "Tweaks" */;
+			buildPhases = (
+				8349CDE2E7DCAA395A29EDB0353330F0 /* Headers */,
+				B4F10A53ACD257786D4D6A859292508E /* Sources */,
+				FB834A87FD28513BFEC5D060E536D866 /* Frameworks */,
+				7EA01F3178B7151D74ACB2AA4315C99C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tweaks;
+			productName = Tweaks;
+			productReference = FBB56C59FDE278BA289748272B754DA7 /* Tweaks.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = ECB8F1A8506225CF84C79BA451A501ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1F391BFDAA7DC9970283DA03D0A13CB /* Pods-CoBazel */,
+				FBCCE854E29F9F330B76E8C2CB1C7008 /* Tweaks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7EA01F3178B7151D74ACB2AA4315C99C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		984B22A86394F1B70BAD84A04017C998 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27E4952629333069B7ABB81AC7B331F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31E03E72E243D0509C3CEF5D20C3F5E9 /* Pods-CoBazel-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4F10A53ACD257786D4D6A859292508E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D32F8FEA0DD3FFEDC57F83296738C2B /* _FBColorComponentCell.m in Sources */,
+				F4912601F229D3181BB27978AA109230 /* _FBColorUtils.m in Sources */,
+				93D1B79D7756EB92F6312CF868CAF94C /* _FBColorWheelCell.m in Sources */,
+				D500E1DD41E352FB5340C60FE08A2009 /* _FBKeyboardManager.m in Sources */,
+				D16A0A2F316E527EB7E3D2D385EE4EE1 /* _FBSliderView.m in Sources */,
+				7C2560765C967E3BAE4EB0BFF4F87DF6 /* _FBTweakArrayViewController.m in Sources */,
+				2E0A826BDD0404C45D4DEE21559B96D9 /* _FBTweakBindObserver.m in Sources */,
+				C25253CAD54BF1B55BBAC80F237CF2E1 /* _FBTweakCategoryViewController.m in Sources */,
+				46E600B68721631E93DB2FCB7F694F78 /* _FBTweakCollectionViewController.m in Sources */,
+				19D136CA9CF0F6C31CEBF79241C6EE85 /* _FBTweakColorViewController.m in Sources */,
+				1D43631D203999434CA8804C1702DB51 /* _FBTweakColorViewControllerHexDataSource.m in Sources */,
+				5D63585E5549D8F092FC260CB9D6CA41 /* _FBTweakColorViewControllerHSBDataSource.m in Sources */,
+				D31AFA8C412444E2A20C1A7E9AE880C5 /* _FBTweakColorViewControllerRGBDataSource.m in Sources */,
+				02E32DF68AB8C1FEF306F76927D6BD0E /* _FBTweakDictionaryViewController.m in Sources */,
+				99F163EEAD058689B30DB8E202156812 /* _FBTweakTableViewCell.m in Sources */,
+				A5BAB1B8345E5064E1E077A56B6CC494 /* FBTweak.m in Sources */,
+				DD0E4F88FD372AE0229D406D7CF2BC79 /* FBTweakCategory.m in Sources */,
+				A2AD34F2F56A279EF747FD2D25FBE7FA /* FBTweakCollection.m in Sources */,
+				43E61ED90A6EC19796F21FBDD43938F9 /* FBTweakInline.m in Sources */,
+				74EB0C97AF1E60BAA31DDC5834A9A8B4 /* FBTweakShakeWindow.m in Sources */,
+				3A594F8845ABECD4532E3A2BAD10DFF6 /* FBTweakStore.m in Sources */,
+				67B349FB7FD8E7420CF1F343B57F5B7B /* FBTweakViewController.m in Sources */,
+				7C87C3B707A0F3FD9CE38E15E36ED872 /* Tweaks-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAAD55F0FBD9C9716DDDB1F9363CEC08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Tweaks;
+			target = FBCCE854E29F9F330B76E8C2CB1C7008 /* Tweaks */;
+			targetProxy = A3037BC0E50C5F9F30D37BE45785894C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4F4D3DACACEAA55299D7B0476F74D1A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3F36FFE55C0BE96DAB7416615BE2DC5 /* Tweaks.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Tweaks/Tweaks-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Tweaks/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Tweaks/Tweaks.modulemap";
+				PRODUCT_MODULE_NAME = Tweaks;
+				PRODUCT_NAME = Tweaks;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		59196A5FFCC7F090BC6A010987DF97B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5314A78037D2BCB422F3C3EC68FFCDC2 /* Pods-CoBazel.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CoBazel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CoBazel/Pods-CoBazel.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B572DC662633C57AA94EDD82E7E2C0E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3F36FFE55C0BE96DAB7416615BE2DC5 /* Tweaks.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Tweaks/Tweaks-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Tweaks/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Tweaks/Tweaks.modulemap";
+				PRODUCT_MODULE_NAME = Tweaks;
+				PRODUCT_NAME = Tweaks;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BC43BFE2C046BA052669EFD4B3BC0820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C21813649BD626E3EB5533772EC5C07B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		DBFB4C2934FC8EB9DF736BEEA29C8E60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B48FB9B9451A9511B5ADC22D6DDCFC1A /* Pods-CoBazel.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CoBazel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CoBazel/Pods-CoBazel.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC43BFE2C046BA052669EFD4B3BC0820 /* Debug */,
+				C21813649BD626E3EB5533772EC5C07B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AC4DBB27014805658352AF2DEDC948F /* Build configuration list for PBXNativeTarget "Tweaks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F4D3DACACEAA55299D7B0476F74D1A0 /* Debug */,
+				B572DC662633C57AA94EDD82E7E2C0E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3825475EE50352EB7E2DBF8D3CD9820 /* Build configuration list for PBXNativeTarget "Pods-CoBazel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBFB4C2934FC8EB9DF736BEEA29C8E60 /* Debug */,
+				59196A5FFCC7F090BC6A010987DF97B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

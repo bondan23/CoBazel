@@ -21,6 +21,7 @@
 		235A56AD2304904100EB7F9C /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235A56AC2304904100EB7F9C /* Weapon.swift */; };
 		235A56B02304909300EB7F9C /* Bomb.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A56AE2304909300EB7F9C /* Bomb.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		235A56B12304909300EB7F9C /* Bomb.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A56AF2304909300EB7F9C /* Bomb.m */; };
+		4114784DF2D2A60B2805B6D4 /* Pods_CoBazel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F504019D8EAAFFFB4110D3 /* Pods_CoBazel.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,9 @@
 		235A56AC2304904100EB7F9C /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
 		235A56AE2304909300EB7F9C /* Bomb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bomb.h; sourceTree = "<group>"; };
 		235A56AF2304909300EB7F9C /* Bomb.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bomb.m; sourceTree = "<group>"; };
+		360CA0E413253502D99718C1 /* Pods-CoBazel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoBazel.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoBazel/Pods-CoBazel.release.xcconfig"; sourceTree = "<group>"; };
+		62F504019D8EAAFFFB4110D3 /* Pods_CoBazel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoBazel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B948B12A25BBF98B30C1435 /* Pods-CoBazel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoBazel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoBazel/Pods-CoBazel.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 			files = (
 				235A56AB23048F5800EB7F9C /* DepsMix.framework in Frameworks */,
 				235A56962304875000EB7F9C /* DepsObjC.framework in Frameworks */,
+				4114784DF2D2A60B2805B6D4 /* Pods_CoBazel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +84,7 @@
 				235A569D23048ED000EB7F9C /* DepsMix */,
 				235A5669230486C100EB7F9C /* Products */,
 				235A56952304875000EB7F9C /* Frameworks */,
+				C18AE7F79C724CF470F93B9C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +124,7 @@
 		235A56952304875000EB7F9C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				62F504019D8EAAFFFB4110D3 /* Pods_CoBazel.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -133,6 +140,15 @@
 				235A56AF2304909300EB7F9C /* Bomb.m */,
 			);
 			path = DepsMix;
+			sourceTree = "<group>";
+		};
+		C18AE7F79C724CF470F93B9C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B948B12A25BBF98B30C1435 /* Pods-CoBazel.debug.xcconfig */,
+				360CA0E413253502D99718C1 /* Pods-CoBazel.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 235A567A230486C200EB7F9C /* Build configuration list for PBXNativeTarget "CoBazel" */;
 			buildPhases = (
+				D69A265286331E7B9170E051 /* [CP] Check Pods Manifest.lock */,
 				235A5664230486C100EB7F9C /* Sources */,
 				235A5665230486C100EB7F9C /* Frameworks */,
 				235A5666230486C100EB7F9C /* Resources */,
+				3C26F3B3E69730660D2AA712 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -279,6 +297,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C26F3B3E69730660D2AA712 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CoBazel/Pods-CoBazel-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Tweaks/Tweaks.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tweaks.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoBazel/Pods-CoBazel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D69A265286331E7B9170E051 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoBazel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		235A5664230486C100EB7F9C /* Sources */ = {
@@ -440,6 +505,7 @@
 		};
 		235A567B230486C200EB7F9C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B948B12A25BBF98B30C1435 /* Pods-CoBazel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -457,6 +523,7 @@
 		};
 		235A567C230486C200EB7F9C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 360CA0E413253502D99718C1 /* Pods-CoBazel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

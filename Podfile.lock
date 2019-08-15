@@ -1,0 +1,16 @@
+PODS:
+  - Tweaks (2.2.0)
+
+DEPENDENCIES:
+  - Tweaks (= 2.2.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Tweaks
+
+SPEC CHECKSUMS:
+  Tweaks: 0c41be06d41b82a11f515c27711b65d343aa4af6
+
+PODFILE CHECKSUM: 0b5d88bf62b8c9382dce46399bc56ab52928a08a
+
+COCOAPODS: 1.5.3

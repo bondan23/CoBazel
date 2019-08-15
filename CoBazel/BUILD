@@ -20,7 +20,8 @@ swift_library(
     ],
     deps = [
         "//DepsObjC:DepsObjC",
-        "//DepsMix:DepsMix"
+        "//DepsMix:DepsMix",
+        "//Vendor/Tweaks:Tweaks",
     ],
     module_name = "BazelApp",
 )
