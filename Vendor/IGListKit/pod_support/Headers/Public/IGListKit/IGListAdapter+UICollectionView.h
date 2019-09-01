@@ -1,0 +1,1 @@
+../../../../Source/Internal/IGListAdapter+UICollectionView.h

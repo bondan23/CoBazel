@@ -9,6 +9,24 @@
 import UIKit
 import DepsObjC
 import DepsMix
+import AsyncDisplayKit
+import IGListKit
+
+class TestDong: ListDiffable {
+   let test: String
+
+   init(test: String) {
+       self.test = test
+   }
+
+   func diffIdentifier() -> NSObjectProtocol {
+       return "TEST" as NSObjectProtocol
+   }
+
+   func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
+       return true
+   }
+}
 
 class ViewController: UIViewController {
 
@@ -20,6 +38,16 @@ class ViewController: UIViewController {
         label.text = "Hello World"
         
         self.view.addSubview(label)
+
+        let node = ASDisplayNode()
+        node.backgroundColor = .blue
+        self.view.addSubview(node.view)
+        node.view.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            node.view.heightAnchor.constraint(equalToConstant: 100),
+            node.view.widthAnchor.constraint(equalToConstant: 100),
+            node.view.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 8)
+        ])
         
         let test = LibAClass()
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in

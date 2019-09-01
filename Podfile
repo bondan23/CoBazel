@@ -7,6 +7,8 @@ target 'CoBazel' do
 
   # Pods for CoBazel
   pod 'Tweaks', '2.2.0'
+  pod 'IGListKit', '3.4.0'
+  pod 'Texture', '2.7'
 end
 
 # target 'DepsMix' do

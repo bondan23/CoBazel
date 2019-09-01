@@ -1,0 +1,1 @@
+../../../../Source/Internal/IGListAdapterInternal.h

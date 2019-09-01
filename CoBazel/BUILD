@@ -9,7 +9,38 @@ licenses(["notice"])
 objc_library(
     name = "CoBazelResources",
     data = ["Base.lproj/LaunchScreen.storyboard"],
+    sdk_frameworks = [
+        "AVFoundation",
+        "CoreMedia",
+        "CoreText",
+        "CoreLocation",
+        "AudioToolbox",
+        "Security",
+        "UIKit",
+        "CoreGraphics",
+        "QuartzCore",
+        "Foundation",
+        "CoreImage",
+        "Intents",
+        "SystemConfiguration",
+        "CoreServices",
+        "SafariServices"
+    ]
 )
+
+# # Tweaks
+# objc_library(
+#     name = "Tweaks",
+#     deps = ["//Vendor/Tweaks"]
+# )
+
+# objc_library(
+#     name = "PINRemoteImage",
+#     deps = ["//Vendor/PINRemoteImage"],
+#     copts = [
+#         "-TOT Vendor/PINRemoteImage/Source/Classes"
+#     ]
+# )
 
 ## Code
 swift_library(
@@ -21,9 +52,10 @@ swift_library(
     deps = [
         "//DepsObjC:DepsObjC",
         "//DepsMix:DepsMix",
-        "//Vendor/Tweaks:Tweaks",
-    ],
-    module_name = "BazelApp",
+        "//Vendor/Tweaks",
+        "//Texture:Texture",
+        "//IGListKit:IGListKit",
+    ]
 )
 
 ios_application(
