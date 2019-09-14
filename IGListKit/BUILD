@@ -6,14 +6,15 @@ objc_library(
         "Source/**/*.mm",
     ]),
     hdrs = glob([
-        "iglistkitheader/**/*.h",
+        "Source/**/*.h",
     ]),
     sdk_frameworks = [
         "UIKit",
     ],
     includes = [
-        "iglistkitheader",
-        "iglistkitheader/IGListKit"
+        ".",
+        # "iglistkitheader",
+        # "iglistkitheader/IGListKit"
     ],
     visibility = ["//visibility:public"],
 )

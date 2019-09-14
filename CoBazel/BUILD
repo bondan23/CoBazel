@@ -52,9 +52,10 @@ swift_library(
     deps = [
         "//DepsObjC:DepsObjC",
         "//DepsMix:DepsMix",
-        "//Vendor/Tweaks",
-        "//Texture:Texture",
-        "//IGListKit:IGListKit",
+        # "//Vendor/Tweaks",
+        # "//Pods/Texture:Texture",
+        "//Pods/IGListKit:IGListKit",
+        "//Pods/React:React",
     ]
 )
 

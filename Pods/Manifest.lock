@@ -1,4 +1,11 @@
 PODS:
+  - boost-for-react-native (1.63.0)
+  - DoubleConversion (1.1.5)
+  - Folly (2016.09.26.00):
+    - boost-for-react-native
+    - DoubleConversion
+    - GLog
+  - GLog (0.3.4)
   - IGListKit (3.4.0):
     - IGListKit/Default (= 3.4.0)
   - IGListKit/Default (3.4.0):
@@ -19,6 +26,36 @@ PODS:
   - PINRemoteImage/PINCache (3.0.0-beta.13):
     - PINCache (= 3.0.1-beta.6)
     - PINRemoteImage/Core
+  - React/Core (0.52.1):
+    - yoga (= 0.52.1.React)
+  - React/CxxBridge (0.52.1):
+    - Folly (= 2016.09.26.00)
+    - React/Core
+    - React/cxxreact
+  - React/cxxreact (0.52.1):
+    - boost-for-react-native
+    - Folly (= 2016.09.26.00)
+    - React/jschelpers
+    - React/jsinspector
+  - React/DevSupport (0.52.1):
+    - React/Core
+    - React/RCTWebSocket
+  - React/fishhook (0.52.1)
+  - React/jschelpers (0.52.1):
+    - Folly (= 2016.09.26.00)
+    - React/PrivateDatabase
+  - React/jsinspector (0.52.1)
+  - React/PrivateDatabase (0.52.1)
+  - React/RCTBlob (0.52.1):
+    - React/Core
+  - React/RCTNetwork (0.52.1):
+    - React/Core
+  - React/RCTText (0.52.1):
+    - React/Core
+  - React/RCTWebSocket (0.52.1):
+    - React/Core
+    - React/fishhook
+    - React/RCTBlob
   - Texture (2.7):
     - Texture/PINRemoteImage (= 2.7)
   - Texture/Core (2.7)
@@ -27,14 +64,26 @@ PODS:
     - PINRemoteImage/PINCache
     - Texture/Core
   - Tweaks (2.2.0)
+  - yoga (0.52.1.React)
 
 DEPENDENCIES:
+  - DoubleConversion (from `./react-podspecs/DoubleConversion.podspec.json`)
+  - Folly (from `./react-podspecs/Folly.podspec.json`)
+  - GLog (from `./react-podspecs/GLog.podspec.json`)
   - IGListKit (= 3.4.0)
+  - React/Core (from `./react-podspecs/React.podspec.json`)
+  - React/CxxBridge (from `./react-podspecs/React.podspec.json`)
+  - React/DevSupport (from `./react-podspecs/React.podspec.json`)
+  - React/RCTNetwork (from `./react-podspecs/React.podspec.json`)
+  - React/RCTText (from `./react-podspecs/React.podspec.json`)
+  - React/RCTWebSocket (from `./react-podspecs/React.podspec.json`)
   - Texture (= 2.7)
   - Tweaks (= 2.2.0)
+  - yoga (from `./react-podspecs/yoga.podspec.json`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - boost-for-react-native
     - IGListKit
     - PINCache
     - PINOperation
@@ -42,14 +91,37 @@ SPEC REPOS:
     - Texture
     - Tweaks
 
+EXTERNAL SOURCES:
+  DoubleConversion:
+    :podspec: "./react-podspecs/DoubleConversion.podspec.json"
+  Folly:
+    :podspec: "./react-podspecs/Folly.podspec.json"
+  GLog:
+    :podspec: "./react-podspecs/GLog.podspec.json"
+  React:
+    :podspec: "./react-podspecs/React.podspec.json"
+  yoga:
+    :podspec: "./react-podspecs/yoga.podspec.json"
+
+CHECKOUT OPTIONS:
+  React:
+    :commit: 7d713045120bac3b73142f9041ee3782fcce50ff
+    :git: https://github.com/tokopedia/react-native-1.git
+
 SPEC CHECKSUMS:
+  boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
+  DoubleConversion: ebb6747c5b66026ad4f97b789c3ceac6f18e57a6
+  Folly: 0e765a0b56a1bf180dcbd51ee178cd3a1e2ab986
+  GLog: 3e4e4ae9746ce6bf6e9420c7fc1e08ad59c8ba1a
   IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
   PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
   PINOperation: 24b774353ca248fcf87d67b2d61eef42087c125a
   PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
+  React: ce7bbbc8fc9ab1ff08084929b63bb41dabb4d534
   Texture: 9d7e38965cf22ccd7cd9c249dd78b3f14e70ab6c
   Tweaks: 0c41be06d41b82a11f515c27711b65d343aa4af6
+  yoga: 7b0269feb6b97ed7f9410a6490bd70014cea3a2b
 
-PODFILE CHECKSUM: 28740e33c74257384ddbc8285dc02193f8ac67fb
+PODFILE CHECKSUM: d56f16c37c4b396ed06e90f5f2f334143ecc3c94
 
 COCOAPODS: 1.5.3

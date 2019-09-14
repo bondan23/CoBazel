@@ -143,20 +143,30 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/DoubleConversion/DoubleConversion.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Folly/folly.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GLog/glog.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/React/React.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Tweaks/Tweaks.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/yoga/yoga.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/DoubleConversion/DoubleConversion.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Folly/folly.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GLog/glog.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/React/React.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Tweaks/Tweaks.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/yoga/yoga.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

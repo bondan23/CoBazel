@@ -9,8 +9,9 @@
 import UIKit
 import DepsObjC
 import DepsMix
-import AsyncDisplayKit
+//import AsyncDisplayKit
 import IGListKit
+import React
 
 class TestDong: ListDiffable {
    let test: String
@@ -38,16 +39,31 @@ class ViewController: UIViewController {
         label.text = "Hello World"
         
         self.view.addSubview(label)
-
-        let node = ASDisplayNode()
-        node.backgroundColor = .blue
-        self.view.addSubview(node.view)
-        node.view.translatesAutoresizingMaskIntoConstraints = false
+        
+        let button = UIButton()
+        self.view.addSubview(button)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("Click", for: .normal)
+        button.backgroundColor = .blue
         NSLayoutConstraint.activate([
-            node.view.heightAnchor.constraint(equalToConstant: 100),
-            node.view.widthAnchor.constraint(equalToConstant: 100),
-            node.view.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 8)
+            button.heightAnchor.constraint(equalToConstant: 100),
+            button.widthAnchor.constraint(equalToConstant: 100),
+            button.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 8)
         ])
+        button.addTarget(self, action: #selector(self.buttonClick), for: .touchUpInside)
+
+//        let node = ASButtonNode()
+//        node.setTitle("Click", with: .systemFont(ofSize: 17), with: .black, for: .normal)
+//        node.backgroundColor = .blue
+//        self.view.addSubview(node.view)
+//        node.view.translatesAutoresizingMaskIntoConstraints = false
+//        NSLayoutConstraint.activate([
+//            node.view.heightAnchor.constraint(equalToConstant: 100),
+//            node.view.widthAnchor.constraint(equalToConstant: 100),
+//            node.view.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 8)
+//        ])
+//
+//        node.addTarget(self, action: #selector(self.buttonClick), forControlEvents: .touchUpInside)
         
         let test = LibAClass()
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in
@@ -67,6 +83,26 @@ class ViewController: UIViewController {
                 }
             }
         }
+    }
+    
+    @objc func buttonClick() {
+        let jsCodeLocation = URL(string: "http://127.0.0.1:8081/index.ios.bundle?platform=ios")
+        let mockData:NSDictionary = ["scores":
+            [
+                ["name":"Alex", "value":"42"],
+                ["name":"Joel", "value":"10"]
+            ]
+        ]
+        
+        let rootView = RCTRootView(
+            bundleURL: jsCodeLocation,
+            moduleName: "RNHighScores",
+            initialProperties: mockData as [NSObject : AnyObject],
+            launchOptions: nil
+        )
+        let vc = UIViewController()
+        vc.view = rootView
+        self.present(vc, animated: true, completion: nil)
     }
 
 
