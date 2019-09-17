@@ -1,5 +1,10 @@
 PODS:
   - boost-for-react-native (1.63.0)
+  - DKImagePickerController (3.8.1):
+    - DKImagePickerController/Camera (= 3.8.1)
+    - DKImagePickerController/ImageManager (= 3.8.1)
+  - DKImagePickerController/Camera (3.8.1)
+  - DKImagePickerController/ImageManager (3.8.1)
   - DoubleConversion (1.1.5)
   - Folly (2016.09.26.00):
     - boost-for-react-native
@@ -11,6 +16,10 @@ PODS:
   - IGListKit/Default (3.4.0):
     - IGListKit/Diffing
   - IGListKit/Diffing (3.4.0)
+  - ISO8601DateFormatterValueTransformer (0.6.1):
+    - RKValueTransformers (~> 1.1.0)
+  - "NSObject+Rx (2.0.0)":
+    - RxSwift
   - PINCache (3.0.1-beta.6):
     - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
     - PINCache/Core (= 3.0.1-beta.6)
@@ -46,52 +55,145 @@ PODS:
     - React/PrivateDatabase
   - React/jsinspector (0.52.1)
   - React/PrivateDatabase (0.52.1)
+  - React/RCTActionSheet (0.52.1):
+    - React/Core
+  - React/RCTAnimation (0.52.1):
+    - React/Core
   - React/RCTBlob (0.52.1):
+    - React/Core
+  - React/RCTCameraRoll (0.52.1):
+    - React/Core
+    - React/RCTImage
+  - React/RCTGeolocation (0.52.1):
+    - React/Core
+  - React/RCTImage (0.52.1):
+    - React/Core
+    - React/RCTNetwork
+  - React/RCTLinkingIOS (0.52.1):
     - React/Core
   - React/RCTNetwork (0.52.1):
     - React/Core
+  - React/RCTSettings (0.52.1):
+    - React/Core
   - React/RCTText (0.52.1):
+    - React/Core
+  - React/RCTVibration (0.52.1):
     - React/Core
   - React/RCTWebSocket (0.52.1):
     - React/Core
     - React/fishhook
     - React/RCTBlob
-  - Texture (2.7):
-    - Texture/PINRemoteImage (= 2.7)
+  - RestKit/Core (0.27.3):
+    - RestKit/CoreData
+    - RestKit/Network
+    - RestKit/ObjectMapping
+  - RestKit/CoreData (0.27.3):
+    - RestKit/ObjectMapping
+  - RestKit/Network (0.27.3):
+    - RestKit/ObjectMapping
+    - RestKit/Support
+    - SOCKit
+  - RestKit/ObjectMapping (0.27.3):
+    - ISO8601DateFormatterValueTransformer (~> 0.6.1)
+    - RestKit/Support
+    - RKValueTransformers (~> 1.1.0)
+  - RestKit/Support (0.27.3):
+    - TransitionKit (~> 2.2)
+  - RestKit/Testing (0.27.3):
+    - RestKit/Network
+  - RKValueTransformers (1.1.3)
+  - RxCocoa (4.1.2):
+    - RxSwift (~> 4.0)
+  - RxCocoa-Texture (2.2.0):
+    - RxCocoa (~> 4.1.2)
+    - RxSwift (~> 4.1.2)
+    - Texture/Core (= 2.7)
+  - RxKeyboard (0.8.3):
+    - RxCocoa (>= 4.1.0)
+    - RxSwift (>= 4.1.0)
+  - RxOptional (3.5.0):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.1.2)
+  - SkeletonView (1.2.3)
+  - SnapKit (4.0.1)
+  - SOCKit (1.1)
+  - SwiftOverlays (5.0.1)
   - Texture/Core (2.7)
+  - Texture/IGListKit (2.7):
+    - IGListKit (~> 3.0)
+    - Texture/Core
   - Texture/PINRemoteImage (2.7):
     - PINRemoteImage/iOS (= 3.0.0-beta.13)
     - PINRemoteImage/PINCache
     - Texture/Core
+  - TransitionKit (2.2.1)
   - Tweaks (2.2.0)
+  - WARangeSlider (1.1.1)
   - yoga (0.52.1.React)
 
 DEPENDENCIES:
+  - "DKImagePickerController (from `git@github.com:ferico55/DKImagePickerController.git`, branch `3.8.1-tkpd`)"
   - DoubleConversion (from `./react-podspecs/DoubleConversion.podspec.json`)
   - Folly (from `./react-podspecs/Folly.podspec.json`)
   - GLog (from `./react-podspecs/GLog.podspec.json`)
-  - IGListKit (= 3.4.0)
+  - "NSObject+Rx (~> 2.0.0)"
   - React/Core (from `./react-podspecs/React.podspec.json`)
   - React/CxxBridge (from `./react-podspecs/React.podspec.json`)
   - React/DevSupport (from `./react-podspecs/React.podspec.json`)
+  - React/RCTActionSheet (from `./react-podspecs/React.podspec.json`)
+  - React/RCTAnimation (from `./react-podspecs/React.podspec.json`)
+  - React/RCTCameraRoll (from `./react-podspecs/React.podspec.json`)
+  - React/RCTGeolocation (from `./react-podspecs/React.podspec.json`)
+  - React/RCTImage (from `./react-podspecs/React.podspec.json`)
+  - React/RCTLinkingIOS (from `./react-podspecs/React.podspec.json`)
   - React/RCTNetwork (from `./react-podspecs/React.podspec.json`)
+  - React/RCTSettings (from `./react-podspecs/React.podspec.json`)
   - React/RCTText (from `./react-podspecs/React.podspec.json`)
+  - React/RCTVibration (from `./react-podspecs/React.podspec.json`)
   - React/RCTWebSocket (from `./react-podspecs/React.podspec.json`)
-  - Texture (= 2.7)
+  - RestKit/Core (~> 0.27.0)
+  - RestKit/Testing (~> 0.27.0)
+  - RxCocoa (~> 4.1.2)
+  - "RxCocoa-Texture (from `git@github.com:ferico55/RxCocoa-Texture.git`, branch `2.2.2-tkpd`)"
+  - RxKeyboard (~> 0.8.3)
+  - RxOptional (~> 3.5.0)
+  - RxSwift (~> 4.1.2)
+  - SkeletonView (~> 1.2.1)
+  - SnapKit (~> 4.0.0)
+  - "SwiftOverlays (from `git@github.com:jeffersonsetiawan/SwiftOverlays.git`, commit `f2828459174c6d28979ae109f7ed1a69c8e33b51`)"
+  - Texture/IGListKit (= 2.7)
+  - Texture/PINRemoteImage (= 2.7)
   - Tweaks (= 2.2.0)
+  - WARangeSlider (from `https://github.com/tokopedia/RangeSlider.git`, commit `b0a8ebefb21cd80f5f4300f7fe4b1f7a535340d0`)
   - yoga (from `./react-podspecs/yoga.podspec.json`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - boost-for-react-native
     - IGListKit
+    - ISO8601DateFormatterValueTransformer
+    - "NSObject+Rx"
     - PINCache
     - PINOperation
     - PINRemoteImage
+    - RestKit
+    - RKValueTransformers
+    - RxCocoa
+    - RxKeyboard
+    - RxOptional
+    - RxSwift
+    - SkeletonView
+    - SnapKit
+    - SOCKit
     - Texture
+    - TransitionKit
     - Tweaks
 
 EXTERNAL SOURCES:
+  DKImagePickerController:
+    :branch: 3.8.1-tkpd
+    :git: "git@github.com:ferico55/DKImagePickerController.git"
   DoubleConversion:
     :podspec: "./react-podspecs/DoubleConversion.podspec.json"
   Folly:
@@ -100,28 +202,65 @@ EXTERNAL SOURCES:
     :podspec: "./react-podspecs/GLog.podspec.json"
   React:
     :podspec: "./react-podspecs/React.podspec.json"
+  RxCocoa-Texture:
+    :branch: 2.2.2-tkpd
+    :git: "git@github.com:ferico55/RxCocoa-Texture.git"
+  SwiftOverlays:
+    :commit: f2828459174c6d28979ae109f7ed1a69c8e33b51
+    :git: "git@github.com:jeffersonsetiawan/SwiftOverlays.git"
+  WARangeSlider:
+    :commit: b0a8ebefb21cd80f5f4300f7fe4b1f7a535340d0
+    :git: https://github.com/tokopedia/RangeSlider.git
   yoga:
     :podspec: "./react-podspecs/yoga.podspec.json"
 
 CHECKOUT OPTIONS:
+  DKImagePickerController:
+    :commit: fa1719aa12710cb75506e8669df2d86af69587f1
+    :git: "git@github.com:ferico55/DKImagePickerController.git"
   React:
     :commit: 7d713045120bac3b73142f9041ee3782fcce50ff
     :git: https://github.com/tokopedia/react-native-1.git
+  RxCocoa-Texture:
+    :commit: d38342559c9625f657505ba5f4fe05fddff95897
+    :git: "git@github.com:ferico55/RxCocoa-Texture.git"
+  SwiftOverlays:
+    :commit: f2828459174c6d28979ae109f7ed1a69c8e33b51
+    :git: "git@github.com:jeffersonsetiawan/SwiftOverlays.git"
+  WARangeSlider:
+    :commit: b0a8ebefb21cd80f5f4300f7fe4b1f7a535340d0
+    :git: https://github.com/tokopedia/RangeSlider.git
 
 SPEC CHECKSUMS:
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
+  DKImagePickerController: 322c767e88985527bd6c11ead62fdd4c89f34f63
   DoubleConversion: ebb6747c5b66026ad4f97b789c3ceac6f18e57a6
   Folly: 0e765a0b56a1bf180dcbd51ee178cd3a1e2ab986
   GLog: 3e4e4ae9746ce6bf6e9420c7fc1e08ad59c8ba1a
   IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
+  ISO8601DateFormatterValueTransformer: 52da467d6ec899d6aedda8e48280ac92e8ee97e6
+  "NSObject+Rx": 2a9cd801d9c847e6d2486cbad8d7701b67834e70
   PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
   PINOperation: 24b774353ca248fcf87d67b2d61eef42087c125a
   PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
   React: ce7bbbc8fc9ab1ff08084929b63bb41dabb4d534
+  RestKit: 0baa8b61899d1e00c24f4f2d8aea07ecef0c88bc
+  RKValueTransformers: e5ed67e3811229b616fe01bddeeafe3bb337b1b9
+  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
+  RxCocoa-Texture: f9a02f208566c32d0cde7315eac865774e6ff790
+  RxKeyboard: e5efbaa109c35be909dd888e53de0f0efdf5169e
+  RxOptional: bd32ff8ca9df4177683d56ffeb618a9d4d5d5cad
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
+  SkeletonView: 6a5772bc32783f4c3e1f818a7d8680d42701dc80
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  SOCKit: c7376ac262bea9115b8f749358f762522a47d392
+  SwiftOverlays: ab459ea9194b0e96aaccaa00e9ead1bf6d46eef1
   Texture: 9d7e38965cf22ccd7cd9c249dd78b3f14e70ab6c
+  TransitionKit: 9ceccda4cd0cdc0a05ef85eb235e5a3292c3c250
   Tweaks: 0c41be06d41b82a11f515c27711b65d343aa4af6
+  WARangeSlider: a7d9bd9fbbde401bff957677efad7150c9b4bb71
   yoga: 7b0269feb6b97ed7f9410a6490bd70014cea3a2b
 
-PODFILE CHECKSUM: d56f16c37c4b396ed06e90f5f2f334143ecc3c94
+PODFILE CHECKSUM: b31d2452c483994fb6bb8d4ae770c1e2002608d6
 
 COCOAPODS: 1.5.3

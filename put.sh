@@ -1,0 +1,1 @@
+curl -X PUT --header "Content-Type: application/json" --data '{"title": "Stackoverflow Compilation Book 1", "year": 2018}' http://172.31.12.136:8080/cache/test/bondan.json

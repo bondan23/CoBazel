@@ -55,7 +55,11 @@ swift_library(
         # "//Vendor/Tweaks",
         # "//Pods/Texture:Texture",
         "//Pods/IGListKit:IGListKit",
-        "//Pods/React:React",
+        # "//Pods/React:React",
+        "//Pods/RxSwift",
+        "//Pods/RxCocoa",
+        "//Pods/PINRemoteImage",
+        "//Pods/DKImagePickerController"
     ]
 )
 

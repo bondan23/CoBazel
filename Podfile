@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '9.0'
+platform :ios, '10.0'
 
 target 'CoBazel' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -12,14 +12,14 @@ target 'CoBazel' do
      'RCTText',
      'RCTNetwork',
      'RCTWebSocket',
-    #  'RCTVibration',
-    #  'RCTImage',
-    #  'RCTGeolocation',
-    #  'RCTAnimation',
-    #  'RCTActionSheet',
-    #  'RCTSettings',
-    #  'RCTLinkingIOS',
-    #  'RCTCameraRoll',
+     'RCTVibration',
+     'RCTImage',
+     'RCTGeolocation',
+     'RCTAnimation',
+     'RCTActionSheet',
+     'RCTSettings',
+     'RCTLinkingIOS',
+     'RCTCameraRoll',
  ]
 
  pod 'Folly', :podspec => './react-podspecs/Folly.podspec.json'
@@ -28,9 +28,24 @@ target 'CoBazel' do
  pod 'yoga', :podspec => './react-podspecs/yoga.podspec.json'
 
   # Pods for CoBazel
+  # pod 'IGListKit', '3.4.0'
   pod 'Tweaks', '2.2.0'
-  pod 'IGListKit', '3.4.0'
-  pod 'Texture', '2.7'
+  pod 'Texture/IGListKit', '2.7'
+  pod 'Texture/PINRemoteImage', '2.7'
+
+  pod 'RxSwift', '~> 4.1.2'
+  pod 'RxCocoa', '~> 4.1.2'
+  pod 'WARangeSlider', :git => 'https://github.com/tokopedia/RangeSlider.git', :commit => 'b0a8ebefb21cd80f5f4300f7fe4b1f7a535340d0'
+  pod 'RxOptional', '~>3.5.0'
+  pod 'NSObject+Rx', '~>2.0.0'
+  pod 'RestKit/Core',  '~> 0.27.0'
+  pod 'RestKit/Testing',  '~> 0.27.0'
+  pod 'DKImagePickerController', :git => 'git@github.com:ferico55/DKImagePickerController.git', :branch =>'3.8.1-tkpd'
+  pod 'SnapKit', '~> 4.0.0'
+  pod 'RxKeyboard', '~> 0.8.3'
+  pod 'SkeletonView', '~> 1.2.1'
+  pod 'SwiftOverlays', :git => 'git@github.com:jeffersonsetiawan/SwiftOverlays.git', :commit => 'f2828459174c6d28979ae109f7ed1a69c8e33b51'
+  pod 'RxCocoa-Texture', :git => 'git@github.com:ferico55/RxCocoa-Texture.git', :branch =>'2.2.2-tkpd'
 end
 
 post_install do |installer|
@@ -43,6 +58,10 @@ post_install do |installer|
   
   installer.pods_project.targets.each do |target|
     target.build_configurations.each do |config|
+      config.build_settings['PROVISIONING_PROFILE_SPECIFIER'] = ''
+      config.build_settings['SWIFT_VERSION'] = '4'
+      config.build_settings['SWIFT_COMPILATION_MODE'] = 'wholemodule'
+
       if target.name == "Texture"
         config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] = '$(inherited) "YOGA=0"'
       end
@@ -58,7 +77,7 @@ post_install do |installer|
   end
 
   # Assuming we're at the root dir
-  bazel_files_dir = 'pods-bazel'
+  bazel_files_dir = 'BazelSupport'
   if File.directory?(bazel_files_dir)
     installer.pod_targets.flat_map do |pod_target|
       pod_name = pod_target.pod_name
@@ -69,7 +88,7 @@ post_install do |installer|
       if File.file?(bazel_file)
         # Generate copyheader
         if pod_name != "boost-for-react-native"
-          `sh find.sh #{pod_name} #{product_module_name}`
+          `sh bazelsupport.sh #{pod_name} #{product_module_name}`
         end
         FileUtils.cp(bazel_file, 'Pods/' + pod_name + '/BUILD', :preserve => false)
       end

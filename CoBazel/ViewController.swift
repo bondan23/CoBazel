@@ -10,8 +10,12 @@ import UIKit
 import DepsObjC
 import DepsMix
 //import AsyncDisplayKit
+// import React
 import IGListKit
-import React
+import RxSwift
+import RxCocoa
+import PINRemoteImage
+import DKImagePickerController
 
 class TestDong: ListDiffable {
    let test: String
@@ -30,7 +34,8 @@ class TestDong: ListDiffable {
 }
 
 class ViewController: UIViewController {
-
+    internal let relay = BehaviorRelay<String>(value: "Testing")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
@@ -39,7 +44,11 @@ class ViewController: UIViewController {
         label.text = "Hello World"
         
         self.view.addSubview(label)
-        
+
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 250, width: 100, height: 100))
+        imageView.pin_setImage(from: URL(string: "https://via.placeholder.com/100")!)
+        self.view.addSubview(imageView)
+
         let button = UIButton()
         self.view.addSubview(button)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -86,25 +95,34 @@ class ViewController: UIViewController {
     }
     
     @objc func buttonClick() {
-        let jsCodeLocation = URL(string: "http://127.0.0.1:8081/index.ios.bundle?platform=ios")
-        let mockData:NSDictionary = ["scores":
-            [
-                ["name":"Alex", "value":"42"],
-                ["name":"Joel", "value":"10"]
-            ]
-        ]
+        let pickerController = DKImagePickerController()
+
+        pickerController.didSelectAssets = { (assets: [DKAsset]) in
+            print("didSelectAssets")
+            print(assets)
+        }
         
-        let rootView = RCTRootView(
-            bundleURL: jsCodeLocation,
-            moduleName: "RNHighScores",
-            initialProperties: mockData as [NSObject : AnyObject],
-            launchOptions: nil
-        )
-        let vc = UIViewController()
-        vc.view = rootView
-        self.present(vc, animated: true, completion: nil)
+        self.present(pickerController, animated: true, completion: nil)
     }
 
-
+    // private func reactDeps(){
+    //     let jsCodeLocation = URL(string: "http://127.0.0.1:8081/index.ios.bundle?platform=ios")
+    //     let mockData:NSDictionary = ["scores":
+    //         [
+    //             ["name":"Alex", "value":"42"],
+    //             ["name":"Joel", "value":"10"]
+    //         ]
+    //     ]
+        
+    //     let rootView = RCTRootView(
+    //         bundleURL: jsCodeLocation,
+    //         moduleName: "RNHighScores",
+    //         initialProperties: mockData as [NSObject : AnyObject],
+    //         launchOptions: nil
+    //     )
+    //     let vc = UIViewController()
+    //     vc.view = rootView
+    //     self.present(vc, animated: true, completion: nil)
+    // }
 }
 
