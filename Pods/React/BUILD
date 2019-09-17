@@ -36,8 +36,8 @@ objc_library(
         'React/**/*.cpp'
     ]),
     includes = [
-        "copyheader",
-        "BazelSupportReact",
+        "BazelSupport",
+        "BazelSupport/React",
         "ReactCommon",
     ],
     deps = ['//Pods/yoga', '//Pods/Folly'],

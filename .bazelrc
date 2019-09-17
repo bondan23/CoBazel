@@ -1,1 +1,1 @@
-build --remote_cache=http://172.31.12.136:8080/cache/sharedui/
+build --remote_cache=http://172.31.12.136:8080/cache/cobazel
