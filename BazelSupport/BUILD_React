@@ -28,7 +28,7 @@ objc_library(
 objc_library(
     name = 'React_cxx',
     srcs = glob([ 
-        'BazelSupport**/*.h', 
+        'BazelSupport/**/*.h', 
         'ReactCommon/**/*.h', 
         'ReactCommon/**/*.cpp',
         'Libraries/**/*.mm',
